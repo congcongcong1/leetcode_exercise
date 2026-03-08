@@ -1,13 +1,15 @@
 """
-LeetCode [15]. [三数之和]
+LeetCode [11]. [盛最多水的容器]
 
 难度: [Medium]
-链接: https://leetcode.cn/problems/3sum/
+链接: https://leetcode.cn/problems/container-with-most-water/
 标签: [数组, 双指针, 排序]
 
 题目描述:
-    给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请你返回所有和为 0 且不重复的三元组。
-    注意：答案中不可以包含重复的三元组。
+    给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。
+    找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+    返回容器可以储存的最大水量。
+    说明：你不能倾斜容器。
 """
 
 from typing import List, Optional
@@ -16,43 +18,32 @@ from typing import List, Optional
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         """
-        解法一:首先这种题目先对数组进行排序，然后使用双指针法，可以将三数之和转化为双数之和，然后再用双指针法降低时间复杂度
+        解法一:双指针+ 短板效应
 
         思路:
-            1. ...对数组进行排序
-            2. ...使用双指针法，将三数之和转化为双数之和，然后再用双指针法降低时间复杂度
-            3. ...由于不能包含重复的三元组，所以如果下一个数和当前的数相同，那么就应该跳过，使用while可以跳过多次
+            1. ...首先这题不能用排序的思想来做，因为涉及到H*W，但是可以尝试用双指针的思想
+            2. ...双指针移动时，永远都是优先考虑短板，如果短板不移动，那么水永远不可能比上次多
+            3. ...
 
-        时间复杂度: O(n^2)
+        时间复杂度: O(n)
         空间复杂度: O(1)
         """
-        # 规定 i < j < k(题目没有给就自己规定)
-        nums.sort() #先排序
-        n = len(nums)
-        ans = []
-        for i in range (n-2):
-            x =nums[i]
-            if i > 0 and nums[i] == nums[i-1]:
-                continue #跳过本次
-            if nums[i] + nums[i+1] + nums[i+2] > 0 :
-                break #如果第一个数加上第二个数加上第三个数大于0，那么三数之和不可能为0
-            j = i + 1 #左指针
-            k = n - 1 #右指针
-            while j < k:
-                if nums[i] + nums[j] + nums[k] > 0:
-                    k -= 1 #右指针左移
-                elif nums[i] + nums[j] + nums[k] < 0:
-                    j += 1 #左指针右移
-                else:
-                    ans.append([nums[i],nums[j],nums[k]])
-                    j += 1
-                    while j < k and nums[j] == nums[j-1]:
-                        j += 1
-                    k -= 1
-                    while j < k and nums[k] == nums[k+1]:
-                        k -= 1
-        
-        return ans
+        # 思考：首先这题不能用排序的思想来做，因为涉及到H*W，但是可以尝试用双指针的思想
+        #双指针移动时，永远都是优先考虑短板，如果短板不移动，那么水永远不可能比上次多
+        #如何更深度理解呢？如果已经确定了一个最大的面积，那么短的边无论在中间怎么移动那么都不会增大面积，这就是短板效应
+        n = len(height)
+        current_area = 0
+        max_area = 0
+        i, j =0 , n-1
+        while i < j:
+            x, y = height[i],height[j]
+            current_area = min(x,y)*(j-i)
+            max_area = max(current_area, max_area)
+            if x <= y:
+                i += 1
+            else :
+                j -= 1            
+        return max_area
             
 
     def solve_v2(self, nums: List[int]) -> int:

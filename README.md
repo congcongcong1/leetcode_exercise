@@ -64,3 +64,7 @@
 cd 01_array/0001_two_sum
 python solution.py
 ```
+1. 笔记：
+    滑动窗口的使用条件：
+    ①有连续的子数组/子字符串
+    ②有单调性可以用while
