@@ -49,8 +49,8 @@ class Solution:
 
     def trap(self, height: List[int]) -> int:
         #方法二：双指针法
-        #思路: 当前缀最大值小于后缀最大值时，可以直接记录这个位置的容量， 并且left右移；
-        #当前缀最大值大于后缀最大值时，也可以记录相应位置的容量，然后right左移；
+        #思路: 当前缀最大值小于后缀最大值时，可以直接记录这个位置的容量， 并且left左移；
+        #当前缀最大值大于后缀最大值时，也可以记录相应位置的容量，然后right右移；
         #时间复杂度 o(n) 空间复杂度o(1)
         ans = 0
         n = len(height)
@@ -65,6 +65,7 @@ class Solution:
             else :
                 ans += suf_max - height[right]
                 right -= 1
+        
         return ans
 
 

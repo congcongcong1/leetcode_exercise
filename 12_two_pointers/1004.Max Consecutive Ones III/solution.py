@@ -15,9 +15,7 @@ from typing import List, Optional
 
 class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int:
-        # 思路：维护一个动态窗口 [left, right]，允许窗口内包含最多 k 个 0。
-        # 当右指针遇到 0 导致窗口内 0 的总数超过 k 时，收缩左边界 left。
-        # 只有当 left 移出一个 0 后，窗口才重新获得翻转名额。在整个过程中，记录窗口达到的最大长度
+        # 思路：维护一个动态窗口 [left, right]，允许窗口内包含最多 k 个 0。当右指针遇到 0 导致窗口内 0 的总数超过 k 时，收缩左边界 left。只有当 left 移出一个 0 后，窗口才重新获得翻转名额。在整个过程中，记录窗口达到的最大长度
         ans = 0
         turn_cnt = 0 # 反转次数
         left = 0

@@ -4,7 +4,7 @@
 
 | 分类 | 已完成 | 目标 |
 |------|--------|------|
-| 数组 | 0 | 10 |
+| 数组 | 1 | 10 |
 | 链表 | 0 | 10 |
 | 栈与队列 | 0 | 8 |
 | 哈希表 | 0 | 8 |
@@ -15,7 +15,7 @@
 | 动态规划 | 0 | 15 |
 | 图论 | 0 | 8 |
 | 二分查找 | 0 | 8 |
-| 双指针 | 0 | 8 |
+| 双指针 | 20 | 8 |
 | 排序 | 0 | 5 |
 | 数学 | 0 | 5 |
 | 设计题 | 0 | 5 |
@@ -28,19 +28,19 @@
 
 | 题号 | 题目 | 难度 | 状态 | 日期 | 备注 |
 |------|------|------|------|------|------|
-| 1 | Two Sum | Easy | ✅ | - | 示例题 |
+| 1 | 两数之和 (Two Sum) | Easy | ✅ | - | 示例题 |
 
 ### 链表
 
 | 题号 | 题目 | 难度 | 状态 | 日期 | 备注 |
 |------|------|------|------|------|------|
-| 206 | Reverse Linked List | Easy | ✅ | - | 示例题 |
+| 206 | 反转链表 (Reverse Linked List) | Easy | ✅ | - | 示例题 |
 
 ### 栈与队列
 
 | 题号 | 题目 | 难度 | 状态 | 日期 | 备注 |
 |------|------|------|------|------|------|
-| 20 | Valid Parentheses | Easy | ✅ | - | 示例题 |
+| 20 | 有效的括号 (Valid Parentheses) | Easy | ✅ | - | 示例题 |
 
 ### 哈希表
 
@@ -58,7 +58,7 @@
 
 | 题号 | 题目 | 难度 | 状态 | 日期 | 备注 |
 |------|------|------|------|------|------|
-| 104 | Maximum Depth of Binary Tree | Easy | ✅ | - | 示例题 |
+| 104 | 二叉树的最大深度 (Maximum Depth of Binary Tree) | Easy | ✅ | - | 示例题 |
 
 ### 回溯
 
@@ -76,7 +76,7 @@
 
 | 题号 | 题目 | 难度 | 状态 | 日期 | 备注 |
 |------|------|------|------|------|------|
-| 70 | Climbing Stairs | Easy | ✅ | - | 示例题 |
+| 70 | 爬楼梯 (Climbing Stairs) | Easy | ✅ | - | 示例题 |
 
 ### 图论
 
@@ -88,13 +88,32 @@
 
 | 题号 | 题目 | 难度 | 状态 | 日期 | 备注 |
 |------|------|------|------|------|------|
-| 704 | Binary Search | Easy | ✅ | - | 示例题 |
+| 704 | 二分查找 (Binary Search) | Easy | ✅ | - | 示例题 |
 
 ### 双指针 / 滑动窗口
 
 | 题号 | 题目 | 难度 | 状态 | 日期 | 备注 |
 |------|------|------|------|------|------|
-| | | | | | |
+| 3 | 无重复字符的最长子串 (Longest Substring Without Repeating Characters) | Medium | ✅ | 2026-03-08 |
+| 11 | 盛最多水的容器 (Container With Most Water) | Medium | ✅ | 2026-03-08 |
+| 15 | 三数之和 (3Sum) | Medium | ✅ | 2026-03-08 |
+| 16 | 最接近的三数之和 (3Sum Closest) | Medium | ✅ | 2026-03-08 |
+| 18 | 四数之和 (4Sum) | Medium | ✅ | 2026-03-08 |
+| 42 | 接雨水 (Trapping Rain Water) | Hard | ✅ | 2026-03-08 |
+| 76 | 最小覆盖子串 (Minimum Window Substring) | Hard | ✅ | 2026-03-08 |
+| 125 | 验证回文串 (Valid Palindrome) | Easy | ✅ | 2026-03-08 |
+| 167 | 两数之和 II - 输入有序数组 (Two Sum II - Input Array Is Sorted) | Medium | ✅ | 2026-03-08 |
+| 209 | 长度最小的子数组 (Minimum Size Subarray Sum) | Medium | ✅ | 2026-03-08 |
+| 611 | 有效三角形的个数 (Valid Triangle Number) | Medium | ✅ | 2026-03-08 |
+| 713 | 乘积小于 K 的子数组 (Subarray Product Less Than K) | Medium | ✅ | 2026-03-08 |
+| 1004 | 最大连续1的个数 III (Max Consecutive Ones III) | Medium | ✅ | 2026-03-08 |
+| 1658 | 将 x 减到 0 的最小操作数 (Minimum Operations to Reduce X to Zero) | Medium | ✅ | 2026-03-08 |
+| 2302 | 统计得分小于 K 的子数组数目 (Count Subarrays With Score Less Than K) | Hard | ✅ | 2026-03-08 |
+| 2730 | 找到最长的半重复子字符串 (Find the Longest Semi-Repetitive Substring) | Medium | ✅ | 2026-03-08 |
+| 2824 | 统计和小于目标的下标对数目 (Count Pairs Whose Sum is Less than Target) | Easy | ✅ | 2026-03-08 |
+| 2962 | 统计最大元素出现至少 K 次的子数组 (Count Subarrays Where Max Element Appears at Least K Times) | Medium | ✅ | 2026-03-08 |
+| 3090 | 每个字符最多出现两次的最长子字符串 (Maximum Length Substring With Two Occurrences) | Easy | ✅ | 2026-03-08 |
+| 3795 | 包含至少 K 个不同且总和最大的最短子数组 (Minimum Subarray Length With Distinct Sum At Least K) | Hard | ✅ | 2026-03-08 |
 
 ### 排序
 

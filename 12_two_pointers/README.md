@@ -14,11 +14,11 @@
 
 | 题号 | 题目 | 难度 | 重要度 |
 |------|------|------|--------|
-| 167 | Two Sum II - Input Array Is Sorted | Medium | ⭐⭐ |
-| 15 | 3Sum | Medium | ⭐⭐⭐ |
-| 11 | Container With Most Water | Medium | ⭐⭐⭐ |
-| 42 | Trapping Rain Water | Hard | ⭐⭐⭐ |
-| 3 | Longest Substring Without Repeating Characters | Medium | ⭐⭐⭐ |
-| 76 | Minimum Window Substring | Hard | ⭐⭐⭐ |
+| 167 | 两数之和 II - 输入有序数组 (Two Sum II - Input Array Is Sorted) | Medium | ⭐⭐ |
+| 15 | 三数之和 (3Sum) | Medium | ⭐⭐⭐ |
+| 11 | 盛最多水的容器 (Container With Most Water) | Medium | ⭐⭐⭐ |
+| 42 | 接雨水 (Trapping Rain Water) | Hard | ⭐⭐⭐ |
+| 3 | 无重复字符的最长子串 (Longest Substring Without Repeating Characters) | Medium | ⭐⭐⭐ |
+| 76 | 最小覆盖子串 (Minimum Window Substring) | Hard | ⭐⭐⭐ |
 | 209 | Minimum Size Subarray Sum | Medium | ⭐⭐ |
 | 438 | Find All Anagrams in a String | Medium | ⭐⭐⭐ |
